@@ -1,7 +1,7 @@
 // simulador de prestamo para la compra de una casa, el banco te presta entre un 80% y un 90%
 // del costo total segun el precio y se financia en cuotas, el resto se debe entregar en el momento de la compra.
-// En el simulador se debe ingresar el precio de la propiedad y te dice cuanto de ese monto te financia, cuanto es lo que hay que pagar al contado. 
-// Luego se elige la cantidad de años para para pagar el prestamo y el simulador te devuelve la cuota mensual. 
+// En el simulador se debe ingresar el precio de la propiedad y la cantidad de años para para pagar el prestamo, luego el simulador te devuelve la cantidad de dinero del prestamo y la cuota mensual. . 
+
 
 
 let precio = Number(prompt("Bienvenido/a al simulador de préstamos hipotecarios. \n \nPor favor ingrese el precio de la propiedad en dolares."));
