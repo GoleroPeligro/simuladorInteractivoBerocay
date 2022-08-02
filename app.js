@@ -40,7 +40,7 @@ const prestamo = (costo, financiamiento, porcentaje) => {
     let presTotal = Math.round(costo * (porcentaje / 100));
     let cuotaMens = Math.round(presTotal / (financiamiento * 12));
 
-    return alert("El préstamo por el " + porcentaje + "% del costo total de la propiedad es de:\nUSD " + presTotal + "\n\nLa cuota mensual es de:\nUSD " + cuotaMens);
+    alert("El préstamo por el " + porcentaje + "% del costo total de la propiedad es de:\nUSD " + presTotal + "\n\nLa cuota mensual es de:\nUSD " + cuotaMens);
 }
 
 
