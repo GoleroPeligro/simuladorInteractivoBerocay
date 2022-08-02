@@ -2,7 +2,16 @@
 // del costo total segun el precio y se financia en cuotas, el resto se debe entregar en el momento de la compra.
 // En el simulador se debe ingresar el precio de la propiedad y la cantidad de años para para pagar el prestamo, luego el simulador te devuelve la cantidad de dinero del prestamo y la cuota mensual.
 
+//------- función para calcular el prestamo y las cuotas------- 
+const prestamo = (costo, financiamiento, porcentaje) => {
+    
+    let presTotal = Math.round(costo * (porcentaje / 100));
+    let cuotaMens = Math.round(presTotal / (financiamiento * 12));
 
+    alert("El préstamo por el " + porcentaje + "% del costo total de la propiedad es de:\nUSD " + presTotal + "\n\nLa cuota mensual es de:\nUSD " + cuotaMens);
+}
+
+//-------Creo las variables que voy a utilizar------
 let precio = Number(prompt("Bienvenido/a al simulador de préstamos hipotecarios. \n \nPor favor ingrese el precio de la propiedad en dolares."));
 let cuotas;
 let porcentajePrestamo;
@@ -32,15 +41,6 @@ if (precio < 60000) {
     porcentajePrestamo = 85;
 } else if (precio >= 12000) {
     porcentajePrestamo = 80;
-}
-
-//------- función para calcular el prestamo y las cuotas------- 
-const prestamo = (costo, financiamiento, porcentaje) => {
-    
-    let presTotal = Math.round(costo * (porcentaje / 100));
-    let cuotaMens = Math.round(presTotal / (financiamiento * 12));
-
-    alert("El préstamo por el " + porcentaje + "% del costo total de la propiedad es de:\nUSD " + presTotal + "\n\nLa cuota mensual es de:\nUSD " + cuotaMens);
 }
 
 
